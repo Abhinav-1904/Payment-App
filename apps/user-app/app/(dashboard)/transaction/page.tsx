@@ -38,7 +38,7 @@ async function gettransactions(){
             userId:Number(session?.user.id)
         }
     })
-    return gettransaction.map((value)=>{
+    return gettransaction.map((value:any)=>{
         return{
             time:value.startTime,
             amount:value.amount,
