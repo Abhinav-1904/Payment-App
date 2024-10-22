@@ -4,7 +4,6 @@ import prisma from "@repo/db/client"
 import RecentTransactions from "../../../components/RecentTransaction"
 import Peer2PeerCard from "../../../components/Peer2PeerCard"
 
-
 async function getpeerTransactions() {
     const session=await getServerSession(authOptions)
     const getFromTransaction=await prisma.p2ptranfers.findMany({
@@ -22,7 +21,7 @@ async function getpeerTransactions() {
         return new Date(b.timeStamp).getTime() - new Date(a.timeStamp).getTime();
     });
 
-    return allTransactions.map((value)=>{
+    return allTransactions.map((value:any)=>{
         return {
             time:value.timeStamp,
             from:value.fromUserId,
