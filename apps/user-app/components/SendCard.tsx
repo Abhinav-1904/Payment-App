@@ -4,7 +4,7 @@ import { Createdcard } from "@repo/ui/card";
 import { Input } from "@repo/ui/input";
 import { Label } from "@repo/ui/label";
 import { useState } from "react";
-import p2ptranfers from "/lib/actions/p2ptransfer";
+import p2ptranfers from "../app/lib/actions/p2ptransfer";
 
 
 export default function (){
