@@ -21,7 +21,7 @@ async function getpeerTransactions() {
         return new Date(b.timeStamp).getTime() - new Date(a.timeStamp).getTime();
     });
 
-    return allTransactions.map((value)=>{
+    return allTransactions.map((value:any)=>{
         return {
             time:value.timeStamp,
             from:value.fromUserId,
