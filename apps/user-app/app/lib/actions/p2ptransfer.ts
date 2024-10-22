@@ -26,7 +26,7 @@ export default async function p2ptranfers(amount:Number,numberto:string) {
         }
     }
     try{
-        await prisma.$transaction(async(tx)=>{
+        await prisma.$transaction(async(tx:any)=>{
             await tx.$queryRaw`SELECT * FROM "Balance" WHERE "userId"=${Number(userId)} FOR UPDATE;`
             const findBalance=await prisma.balance.findFirst({
                 where:{
