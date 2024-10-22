@@ -9,8 +9,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "//components/ui/select"
-import createOnRampTrans from '/lib/actions/createOnRamps'
+} from "../app/components/ui/select"
+import createOnRampTrans from '../app/lib/actions/createOnRamps'
 
 const supportedBanks=[{
     name: "HDFC Bank",

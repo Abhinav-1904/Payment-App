@@ -1,7 +1,7 @@
 "use client"
-import { Input } from "@/src/components/ui/input"
-import { Label } from "@/src/components/ui/label"
-import { Button } from "@/src/components/ui/button";
+import { Input } from "../components/ui/input"
+import { Label } from "../components/ui/label"
+import { Button } from "../components/ui/button";
 import { useRef } from "react";
 import { signIn } from "next-auth/react";
 import { FaGoogle } from "react-icons/fa";

@@ -1,6 +1,6 @@
 import {SignIn} from '@repo/ui/signin'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '/lib/auth'
+import { authOptions } from '../lib/auth'
 import { redirect } from 'next/navigation'
 import Image from 'next/image'
 const Signinpage=async ()=>{

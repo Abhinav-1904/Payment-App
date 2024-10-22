@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth"
-import { authOptions } from "/lib/auth"
+import { authOptions } from "../../lib/auth"
 import prisma from "@repo/db/client"
 import RecentTransactions from "../../../components/RecentTransaction"
 import Peer2PeerCard from "../../../components/Peer2PeerCard"

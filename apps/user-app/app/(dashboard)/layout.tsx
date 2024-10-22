@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import CustomappBar from "../../components/Userappbar";
 import UserSidebar from "../../components/Usersidebar";
 import { Clock3,ArrowLeftRight,HomeIcon,Send } from "lucide-react";
-import { authOptions } from "/lib/auth";
+import { authOptions } from "../lib/auth";
 import { redirect } from "next/navigation";
 export default async function RootLayout({
     children,

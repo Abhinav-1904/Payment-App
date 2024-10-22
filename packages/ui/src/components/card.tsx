@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/src/components/ui/card"
+} from "../components/ui/card"
 import { Button } from "./ui/button";
 import React from "react";
 

@@ -10,7 +10,8 @@
     "./label": "./src/components/ui/label.tsx",
     "./input": "./src/components/ui/input.tsx",
     "./chart": "./src/components/chart.tsx",
-    "./scroll-area":"./src/components/ui/scroll-area.tsx"
+    "./scroll-area":"./src/components/ui/scroll-area.tsx",
+    "./lib/utils": "./src/lib/utils.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

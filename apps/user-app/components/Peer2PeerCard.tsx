@@ -1,6 +1,6 @@
 import { Createdcard } from "@repo/ui/card";
 import { getServerSession } from "next-auth";
-import { authOptions } from "/lib/auth";
+import { authOptions } from "../app/lib/auth";
 import {ScrollArea,ScrollBar} from "@repo/ui/scroll-area"
 
 interface transactionprops{

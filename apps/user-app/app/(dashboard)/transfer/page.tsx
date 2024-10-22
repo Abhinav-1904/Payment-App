@@ -3,7 +3,7 @@ import BalanceCard from "../../../components/BalanceCard";
 import RecentTransactions from "../../../components/RecentTransaction";
 import prisma from "@repo/db/client"
 import { getServerSession } from 'next-auth'
-import { authOptions } from '/lib/auth'
+import { authOptions } from '../../lib/auth'
 
 
 async function getBalance(){

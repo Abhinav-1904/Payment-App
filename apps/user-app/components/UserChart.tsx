@@ -1,7 +1,7 @@
 import {BarChartComponent} from "@repo/ui/chart"
 import prisma from "@repo/db/client"
 import { getServerSession } from "next-auth"
-import { authOptions } from "/lib/auth"
+import { authOptions } from "../app/lib/auth"
 
 
 function get7Days(){
