@@ -5,7 +5,6 @@ import prisma from "@repo/db/client"
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../../lib/auth'
 
-
 async function getBalance(){
     const session=await getServerSession(authOptions)
     const balance=await prisma.balance.findFirst({
