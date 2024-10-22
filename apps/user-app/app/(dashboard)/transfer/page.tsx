@@ -29,7 +29,7 @@ async function gettransactions(){
         },
         take:1
     })
-    return transactions.map((value)=>{
+    return transactions.map((value:any)=>{
         return {
             time:value.startTime,
             status:value.status,
