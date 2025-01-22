@@ -1,3 +1,4 @@
+
 import UserChart from "../../../components/UserChart"
 export default function dashboard(){
     return <div className="pt-4 pl-2 w-full h-screen ">
