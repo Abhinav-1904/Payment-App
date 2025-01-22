@@ -2,45 +2,109 @@
 
 ## Overview
 
-The Payment App is designed to facilitate seamless financial transactions between users. It offers a secure and user-friendly interface for managing payments, viewing transaction histories, and integrating with various payment gateways.
+Payment App is a secure and efficient platform designed for managing transactions. Built with a modern tech stack, it ensures a seamless payment experience for users. The app supports authentication, transaction management, and user-friendly dashboards.
+
+---
 
 ## Features
 
-- **User Authentication**: Secure sign-up and login functionalities to protect user data.
-- **Transaction Management**: Initiate and manage payments effortlessly.
-- **Transaction History**: View detailed records of past transactions.
-- **Payment Gateway Integration**: Connect with multiple payment gateways for versatile payment options.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User Authentication:** Secure login and signup system.
+- **Transaction Management:** Record and view transaction history.
+- **Responsive UI:** Built with React for a smooth user experience.
+- **Secure Backend:** Ensures data integrity and protection.
 
-## Technologies Used
+---
 
-- **Frontend**: Developed using modern web technologies for an intuitive user experience.
-- **Backend**: Powered by a robust server to handle transactions and user data securely.
-- **Database**: Utilizes a reliable database system to store user and transaction information.
-- **Payment Integration**: Supports integration with various payment gateways to process transactions.
+## Tech Stack
 
-## Getting Started
+### Frontend
 
-To set up the project locally:
+- React
+- Tailwind CSS
 
-1. **Clone the Repository**:
+### Backend
+
+- Node.js
+- Express
+- Prisma ORM
+- PostgreSQL
+
+### DevOps
+
+- Docker for containerization
+- GitHub Actions for CI/CD
+
+---
+
+## Prerequisites
+
+- Node.js >= 16.x
+- Docker installed
+- PostgreSQL database instance
+
+---
+
+## Setup Instructions
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
    ```bash
-   git clone https://github.com/Abhinav-1904/Payment-App.git
+   cd apps/user-app
    ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd Payment-App
-   ```
-3. **Install Dependencies**:
+2. Install dependencies:
    ```bash
    npm install
    ```
-4. **Configure Environment Variables**:
-   - Create a `.env` file in the root directory.
-   - Add necessary environment variables such as database credentials and API keys.
-5. **Run the Application**:
+3. Start the development server:
    ```bash
    npm run dev
    ```
-6. **Access the Application**:
-   - Open your browser and navigate to `http://localhost:3000`.
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up the database:
+   - Create a `.env` file in the `backend` directory with the following variables:
+     ```env
+     DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>
+     ```
+   - Apply Prisma migrations:
+     ```bash
+     npx prisma migrate dev
+     ```
+   - Seed the database with initial data:
+     ```bash
+     npx ts-node db/prisma/seed.ts
+     ```
+4. Start the backend server:
+   use Docker 5432 port(default)
+
+### Docker Setup
+
+1. Build and start the services:
+   ```bash
+   docker-compose up --build
+   ```
+2. Access the app at `http://localhost:3002` .
+
+---
+
+## Usage
+
+1. Register or log in as a user.
+2. Navigate through the dashboard to view or manage transactions.
+3. Use the seeded credentials for testing:
+   ```
+   Email: admin@example.com
+   Password: admin123
+   ```
+
+---
