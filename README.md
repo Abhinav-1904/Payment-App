@@ -102,9 +102,3 @@ Payment App is a secure and efficient platform designed for managing transaction
 1. Register or log in as a user.
 2. Navigate through the dashboard to view or manage transactions.
 3. Use the seeded credentials for testing:
-   ```
-   Email: admin@example.com
-   Password: admin123
-   ```
-
----
